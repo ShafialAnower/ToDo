@@ -3,6 +3,60 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-9">TODO LIST</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">This is a ToDo Note App</a>.</p>
 </div>
+
+<div class="list-group">
+    <a href="second-page.html" class="list-group-item list-group-item-action active shorter-item" aria-current="true">
+        Add A Task
+    </a>
+    <a href="#" class="list-group-item list-group-item-action custom-link2 shorter-item">View All Your Tasks</a>
+    <a href="#" class="list-group-item list-group-item-action custom-link3 shorter-item">Update Your Tasks</a>
+    <a href="#" class="list-group-item list-group-item-action custom-link4 shorter-item">Delete Your Tasks</a>
+    <a href="#" class="list-group-item list-group-item-action disabled shorter-item" tabindex="-1" aria-disabled="true">A disabled link item</a>
+</div>
+
+<style>
+    
+    .list-group-item.active {
+        background-color: lightgreen;
+        border-color: black;
+        color: white; /* Set text color to white or another contrasting color */
+        
+    }
+</style>
+
+<style>
+    .custom-link2 {
+        background-color: lightskyblue;
+        border-color: black;
+        color: white;
+
+    }
+</style>
+
+<style>
+    .custom-link3 {
+        background-color: mediumpurple;
+        border-color: black;
+        color: white;
+    }
+</style>
+
+<style>
+    .custom-link4 {
+        background-color: indianred;
+        border-color: black;
+        color: white;
+    }
+</style>
+
+<style>
+    .shorter-item {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 28px;
+        font-weight: bold;
+    }
+</style>
