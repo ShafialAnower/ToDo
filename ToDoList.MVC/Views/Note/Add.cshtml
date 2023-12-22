@@ -3,19 +3,17 @@
 *@
 @{
 }
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Task #</th>
-            <th scope="col">Description: </th>
-            <th scope="col">Option: </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td><button type="button" class="btn btn-outline-success">ADD</button></td>
-        </tr>
-    </tbody>
-</table>
+
+@model ToDoList.MVC.Models.Note
+
+<form method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Enter Note Title</label>
+        <input type="text" class="form-control" id="inputTitle" asp-for="Title" >
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Enter your note description</label>
+        <textarea type="text" class="form-control" id="note-description" asp-for="Description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

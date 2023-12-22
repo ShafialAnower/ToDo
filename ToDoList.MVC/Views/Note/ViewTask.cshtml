@@ -3,16 +3,32 @@
 *@
 @{
 }
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Task #</th>
-            <th scope="col">Description: </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row"></th>
-            <td>&emsp;</td>
-    </tbody>
-</table>
+@model List<Note>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Note</th>
+                <th scope="col">Description: </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var note in Model)
+            {
+                <tr>
+                    <td>@note.Title</td>
+                    <td>@note.Description</td>
+                    <td class="text-center">
+                        <button class="m-1 btn btn-outline-warning">Update</button>
+                        <button class="m-1 btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="Note" asp-action="Add">
+        <button class="m-1 btn btn-outline-success">Add Note</button>
+    </a>
+</div>
