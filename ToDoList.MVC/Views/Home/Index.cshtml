@@ -3,5 +3,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-9">Welcome to Note Application</h1>
+    <h1 class="display-1">Welcome to Note Application</h1>
+    <p></p>
+    <p></p>
+</div>
+<div class="list-group">
+    <a class="list-group-item list-group-item-action active shorter-item" aria-current="true" asp-controller="Note" asp-action="Add">
+        Add A Task
+    </a>
+    <a class="list-group-item list-group-item-action custom-link2 shorter-item" asp-controller="Note" asp-action="ViewTask">View All Your Tasks</a>
+    <a class="list-group-item list-group-item-action custom-link3 shorter-item" asp-controller="Note" asp-action="Update">Update Your Tasks</a>
+    <a class="list-group-item list-group-item-action custom-link4 shorter-item" asp-controller="Note" asp-action="Delete">Delete Your Tasks</a>
+    <a class="list-group-item list-group-item-action disabled shorter-item" tabindex="-1" aria-disabled="true">A disabled link item</a>
 </div>

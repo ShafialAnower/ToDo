@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ToDoList.MVC.Models.Note
+
+<form method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Enter Note Title</label>
+        <input type="text" class="form-control" id="inputTitle" asp-for="Title" >
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Enter your note description</label>
+        <textarea type="text" class="form-control" id="note-description" asp-for="Description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

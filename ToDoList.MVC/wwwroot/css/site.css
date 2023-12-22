@@ -20,3 +20,43 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.list-group-item.active {
+    background-color: lightgreen;
+    border-color: black;
+    color: white;
+    border-width: medium;
+}
+
+
+.custom-link2 {
+    background-color: lightskyblue;
+    border-color: black;
+    color: white;
+    border-width: medium;
+}
+
+
+.custom-link3 {
+    background-color: mediumpurple;
+    border-color: black;
+    color: white;
+    border-width: medium;
+}
+
+
+.custom-link4 {
+    background-color: indianred;
+    border-color: black;
+    color: white;
+    border-width: medium;
+}
+
+
+
+.shorter-item {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+}
