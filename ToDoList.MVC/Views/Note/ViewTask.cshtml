@@ -21,7 +21,9 @@
                     <td>@note.Title</td>
                     <td>@note.Description</td>
                     <td class="text-center">
-                        <button class="m-1 btn btn-outline-warning">Update</button>
+                        <a asp-controller="Note" asp-action="Update">
+                            <button class="m-1 btn btn-outline-warning">Update</button>
+                        </a>
                         <button class="m-1 btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
@@ -31,4 +33,5 @@
     <a asp-controller="Note" asp-action="Add">
         <button class="m-1 btn btn-outline-success">Add Note</button>
     </a>
+
 </div>

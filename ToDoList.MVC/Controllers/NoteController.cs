@@ -13,7 +13,7 @@ namespace ToDoList.MVC.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet] // If you don't specify an HTTP method attribute, the action is assumed to handle HTTP GET requests
         public IActionResult Add()
         {
             return View();
@@ -36,9 +36,20 @@ namespace ToDoList.MVC.Controllers
             List<Note> notes = _context.Notes.ToList();
             return View(notes);
         }
+        [HttpGet]
         public IActionResult Update()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Update(Note note)
+        {
+            note.CreatedAt = DateTime.Now;
+            note.UpdatedAt = DateTime.Now;
+            
+            _context.Notes.Update(note);
+            _context.SaveChanges();
+            return RedirectToAction("ViewTask");
         }
         public IActionResult Delete()
         {
