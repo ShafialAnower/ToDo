@@ -8,11 +8,11 @@
 <form method="post">
     <div class="mb-3">
         <label for="title" class="form-label">Update Note Title</label>
-        <input type="text" class="form-control" id="inputTitle" asp-for="Title" value="@Model.Title" />
+        <input type="text" class="form-control" id="inputTitle" asp-for="Title"  />
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Update your note description</label>
-        <textarea type="text" class="form-control" id="note-description" asp-for="Description">@Model.Description</textarea>
+        <textarea type="text" class="form-control" id="note-description" asp-for="Description"> </textarea>
     </div>
     <button type="submit" class="btn btn-primary">Update</button>
 </form>

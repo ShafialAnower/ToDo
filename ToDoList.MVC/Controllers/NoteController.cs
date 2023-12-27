@@ -38,23 +38,30 @@ namespace ToDoList.MVC.Controllers
         }
         [HttpGet]
         [ActionName("Update")]
-        public IActionResult UpdateView(Note note)
+        public IActionResult UpdateView(Guid id)
         {
-            return View();
+           Note notes = _context.Notes.Find(id);
+            return View(notes); 
         }
         [HttpPost]
         public IActionResult Update(Note note)
         {
-            note.CreatedAt = DateTime.Now;
+            
             note.UpdatedAt = DateTime.Now;
             
             _context.Notes.Update(note);
             _context.SaveChanges();
             return RedirectToAction("ViewTask");
         }
-        public IActionResult Delete()
+        public IActionResult Delete(Guid id) //parameters used
         {
-            return View();
+            Note notes = _context.Notes.Find(id);
+           
+            _context.Notes.Remove(notes);
+            _context.SaveChanges();
+            return RedirectToAction("ViewTask");
         }
     }
 }
+
+//Add a table named category 
