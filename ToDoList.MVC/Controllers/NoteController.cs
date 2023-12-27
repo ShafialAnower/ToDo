@@ -37,7 +37,8 @@ namespace ToDoList.MVC.Controllers
             return View(notes);
         }
         [HttpGet]
-        public IActionResult Update()
+        [ActionName("Update")]
+        public IActionResult UpdateView(Note note)
         {
             return View();
         }
