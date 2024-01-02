@@ -18,14 +18,39 @@
             @foreach (var note in Model)
             {
                 <tr>
-                    <td>@note.Title</td> 
-                    <td>@note.Description</td>
+                    <td>
+                       <a asp-controller="Note" asp-action="Done" asp-route-id="@note.Id">
+                        @if (note.IsDone)
+                        {
+                            <s>@note.Title</s>
+                        }
+                        else
+                     
+                        {
+                            @note.Title
+                        }
+                        </a>
+                    </td>
+                    <td>
+                        <a asp-controller="Note" asp-action="Done" asp-route-id="@note.Id">
+                        @if (note.IsDone)
+                        {
+                            <s>@note.Description</s>
+                        }
+                        else
+                        {
+                            @note.Description
+                        }
+                        </a>
+                    </td>
+
+         
                     <td class="text-center">
-                        <a asp-controller="Note" asp-action="Update" asp-route-id ="@note.Id"> 
+                        <a asp-controller="Note" asp-action="Update" asp-route-id="@note.Id">
                             <button class="m-1 btn btn-outline-warning">Update</button>
                         </a>
-                        <a asp-controller="Note" asp-action="Delete" asp-route-id ="@note.Id"> 
-                            <button class="m-1 btn btn-outline-danger">Delete</button>  
+                        <a asp-controller="Note" asp-action="Delete" asp-route-id="@note.Id">
+                            <button class="m-1 btn btn-outline-danger">Delete</button>
                         </a>
                     </td>
                 </tr>
@@ -37,3 +62,4 @@
     </a>
 
 </div>
+

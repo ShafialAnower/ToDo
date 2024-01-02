@@ -61,7 +61,19 @@ namespace ToDoList.MVC.Controllers
             _context.SaveChanges();
             return RedirectToAction("ViewTask");
         }
+        [HttpGet]
+        public IActionResult Done(Guid id)
+        {
+            Note notes = _context.Notes.Find(id);
+
+            notes.IsDone = !notes.IsDone;   //In C#, the ! operator is the logical NOT operator. It reverses the state of a condition 
+
+
+            _context.Notes.Update(notes);
+            _context.SaveChanges();
+
+            return RedirectToAction("ViewTask");
+        }
+        
     }
 }
-
-//Add a table named category 

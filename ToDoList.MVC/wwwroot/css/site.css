@@ -60,3 +60,8 @@ body {
     font-size: 28px;
     font-weight: bold;
 }
+
+a {
+    color: black; /* Remove the blue color and underline  */
+    text-decoration: none; 
+}
