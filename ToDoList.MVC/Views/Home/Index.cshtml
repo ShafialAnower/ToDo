@@ -2,14 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+<body class="bc"> 
+   
+
 <div class="text-center">
     <h1 class="display-1">Welcome to Note Application</h1>
-    <p></p>
-    <p></p>
+    <br/>
+        <p class="display-2">
+            Hello! This is very a simple note application. You can add notes, view notes, edit notes, and delete notes. 
+            Furthermore, you can mark notes as completed by clicking on the note itself. 
+            <img src="~/images/logo2.png" alt="Description of the image" class="float-right" style="max-width: 10%; margin-left:;" />
+        </p>
+        <p class="display-3">  
+            If you have any further questions, please contact us at the contact page!
+            </p>
+        
 </div>
+<br/>
+<br/>
 <div class="list-group">
     <a class="list-group-item list-group-item-action active shorter-item" aria-current="true" asp-controller="Note" asp-action="Add">
-        Add A Task
+        ADD A TASK
     </a>
-    <a class="list-group-item list-group-item-action custom-link2 shorter-item" asp-controller="Note" asp-action="ViewTask">View All Your Tasks</a>
+    <a class="list-group-item list-group-item-action custom-link2 shorter-item" asp-controller="Note" asp-action="ViewTask">VIEW ALL YOUR TASKS</a>
 </div>
+
+</body>
