@@ -22,9 +22,9 @@ body {
 }
 
 .list-group-item.active {
-    background-color: #e89c66;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
     border-color: black;
-    color: white;
+    color: black;
     border-width: thick;
     border-style: double;
     font-family: Papyrus, fantasy;
@@ -34,9 +34,9 @@ body {
 
 
 .custom-link2 {
-    background-color: #c2b1a4;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
     border-color: black;
-    color: white;
+    color: black;
     border-width: thick;
     border-style: double;
     font-family: Papyrus, fantasy;
@@ -74,32 +74,45 @@ a {
     text-decoration: none; 
 }
 .footer.customize {
-    background: #e8d9ce;
-    border-style: dashed;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
+    border-style: double;
     border-width: thick;
-    border-color: snow;
+    border-color: grey;
     text-shadow: 0.5px 0.5px 0.5px black;
     font-size: 18px;
     font-weight: bold;
-    font-family: Papyrusy;
+    font-family: Papyrus;
 }
 .social-icons a {
     color: black;
     font-size: 20px;
     margin-left: 10px;
 }
-.bc {
-    background-image: url(https://i.pinimg.com/736x/b1/f6/17/b1f617fff2222dff793602c9c9d0c422.jpg);
-    background-color: #cccccc;
+.bg-1 {
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+}
+.bg-2 {
+    background: conic-gradient(from .5turn at bottom center, lightblue, white)
+}
+.bg-3 {
+    background: conic-gradient(from -.4turn at bottom right, deeppink, cyan, rebeccapurple);
+}
+.navbar {
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
+    text-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Papyrus;
 }
 .display-1 {
     font-family: Papyrus, fantasy;
-    font-size: 60px;
+    font-size: 70px;
 }
 .display-2 {
     font-family: Papyrus, fantasy;
     letter-spacing: 0.5px;
     font-size: 30px;
+    font-weight: bold;
 }
 .display-3 {
     font-family: Papyrus, fantasy;
