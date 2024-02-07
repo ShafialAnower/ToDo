@@ -82,12 +82,17 @@ a {
     font-size: 18px;
     font-weight: bold;
     font-family: Papyrus;
+
 }
-.social-icons a {
+/*
+    .social-icons a {
     color: black;
     font-size: 20px;
-    margin-left: 10px;
-}
+    margin-left: auto;
+    margin-right: 10px;
+    }
+*/
+
 .bg-1 {
     background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
 }
@@ -95,7 +100,7 @@ a {
     background: conic-gradient(from .5turn at bottom center, lightblue, white)
 }
 .bg-3 {
-    background: conic-gradient(from -.4turn at bottom right, deeppink, cyan, rebeccapurple);
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, skyblue);
 }
 .navbar {
     background: conic-gradient(from .5turn at bottom center, lightblue, white);
