@@ -14,4 +14,5 @@ note should have :
 	3. CreationTime
 	4. UpdateTime
 	5. SoftDelete
-	
+
+I am using SQL Lite for database storage and entity framework ORM to allow a seamless transition when modifying the ToDO App
