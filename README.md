@@ -1,4 +1,4 @@
-# ToDoList
+# ToDoList using MVVC
 
 I want to be able to create note
 I want to be able to Delete note
